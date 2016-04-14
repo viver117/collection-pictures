@@ -4,7 +4,7 @@
 # Authors: Nosov Mikhail, viver_117, Konstantin Guk
 # Consultant: grishnan
 # E-mails: mikhail1920@mail.com, viver12366@gmail.com, 1996artes@mail.ru, grishnan@gmail.com
-# License: CC BY-SA 3.0
+# License: GNU GPL v3.0
 # Description by Eng: Program «Collection picture»
 # Description by Rus: Программа «Собери картинку»
 
@@ -16,6 +16,7 @@ screen = pygame.display.set_mode((SIZE_SCREEN, SIZE_SCREEN))
 pygame.display.set_caption("Collection picture")
 
 field = Field()
+field.randomMix()
 
 while True:
   
