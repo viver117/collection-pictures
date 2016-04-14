@@ -14,13 +14,13 @@ class Field():
     self.initmatrix = self.matrix                      # копия начальной структуры игрового поля
     self.pics       = []                               # хранилище картинок
     self.indexNone  = (SIZE_FIELD - 1, SIZE_FIELD - 1) # индекс пустой клетки
-    self.level      = ["1", "2", "3", "4"]
+    self.level      = []
 	
     ''' заполнение хранилища картинок '''
     random.shuffle(self.level)
-    if (SIZE_FIELD == 3): self.address = os.path.join("pics", "300x300")
-    if (SIZE_FIELD == 4): self.address = os.path.join("pics", "400x400")
-    if (SIZE_FIELD == 5): self.address = os.path.join("pics", "500x500", self.level)
+    if (SIZE_FIELD == 3): self.address = os.path.join("pics", "300x300", "2")
+    if (SIZE_FIELD == 4): self.address = os.path.join("pics", "400x400", "2")
+    if (SIZE_FIELD == 5): self.address = os.path.join("pics", "500x500", "2")
 	
 	
     for i in range(0, SIZE_FIELD**2):
